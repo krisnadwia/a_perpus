@@ -1,0 +1,26 @@
+<odoo>
+
+    <!-- tree view pinjam -->
+    <record id="perpus_pinjamdetil_tree" model="ir.ui.view">
+        <field name="name">perpus.pinjamdetil.tree</field>
+        <field name="model">perpus.pinjamdetil</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Daftar Pinjam Detil"> 
+                <field name="buku_id"/>
+                <field name="jumlah"/>
+            </tree>            
+        </field>
+    </record>        
+
+    <!-- graph view -->
+    <record id="perpus_pinjamdetil_bar" model="ir.ui.view">
+            <field name="name">perpus.pinjamdetil.bar</field>
+            <field name="model">perpus.pinjamdetil</field>
+            <field name="arch" type="xml">
+                <graph string="Intensitas Buku Dipinjam" type="bar">
+                    <field name="buku_id" />                
+                </graph>
+            </field>
+    </record>
+</odoo>
