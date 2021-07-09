@@ -1,0 +1,28 @@
+<odoo>
+
+    <!-- tampilan treeview -->
+    <record id="perpus_mhs_tree" model="ir.ui.view">
+        <field name="name">perpus_mhs_tree</field>
+        <field name="model">perpus.mhs</field>
+        <field name="arch" type="xml">
+            <tree string="Daftar Mahasiswa">
+                <field name="nomor_induk"/>
+                <field name="nama"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- tampilan formulir -->
+    <record id="perpus_mhs_form" model="ir.ui.view">
+        <field name="name">perpus_mhs_form</field>
+        <field name="model">perpus.mhs</field>
+        <field name="arch" type="xml">
+            <form string="Mahasiswa">
+                <group>
+                    <field name="nomor_induk"/>
+                    <field name="nama"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
